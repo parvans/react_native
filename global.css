@@ -55,7 +55,7 @@
     }
 
     .tabs-active {
-        @apply bg-accent;
+        @apply bg-green-600;
     }
 
     .tabs-glyph {
