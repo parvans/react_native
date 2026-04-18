@@ -22,11 +22,11 @@ export default function Index() {
         ListHeaderComponent={()=>(
           <>
             <View className="home-header">
-        <View className="home-user"> 
-          <Image source={images.avatar2} className="home-avatar"/>
-          <Text className="home-user-name">{HOME_USER.name}</Text>
-        </View>
-        <Image source={icons.add} className="home-add-icon"/>
+              <View className="home-user"> 
+                <Image source={images.avatar2} className="home-avatar"/>
+                <Text className="home-user-name">{HOME_USER.name}</Text>
+              </View>
+              <Image source={icons.add} className="home-add-icon"/>
             </View>
 
             <View className="home-balance-card">
