@@ -124,7 +124,14 @@ export function getUserEmailAddress(user?: UserResource | null) {
 }
 
 export function getUserInitials(user?: UserResource | null) {
-  const displayName = getUserDisplayName(user);
+  if (!user) return 'U';
+
+  const displayName =
+    user.fullName?.trim() ||
+    user.firstName?.trim() ||
+    user.username?.trim() ||
+    user.primaryEmailAddress?.emailAddress?.split('@')[0] ||
+    '';
   const initials = displayName
     .split(' ')
     .filter(Boolean)
