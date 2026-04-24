@@ -52,7 +52,9 @@
             "./assets/fonts/PlusJakartaSans-SemiBold.ttf"
           ]
         }
-      ]
+      ],
+      "@clerk/expo",
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true,
